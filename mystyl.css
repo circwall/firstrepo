@@ -1,0 +1,261 @@
+:root {
+    --primary-color: #ff5315;
+    --bottom-color: #101e2b;
+  }
+
+body{
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+nav{
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: white;
+    text-align: right;
+}
+nav .eun{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.list{
+    display:inline-block;
+    justify-content: flex-end;
+    padding:5px;
+    border-radius: 25%;
+    padding: -5px;
+}
+.menus{
+    margin-top: -2.54rem;
+    color: black;
+}
+.list:hover{
+    background:var(--primary-color);
+    color: white;
+}
+.nav-it{
+    padding-top: 1.3rem;
+    max-width: 960px;
+    margin: auto;
+}
+.logo{
+    gap: 8px;
+    display: flex;
+    margin-bottom: -0.5rem;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.herosect{
+    padding-top: 200px;
+    background-color: var(--bottom-color);
+    color: white;
+    padding-bottom: 120px;
+}
+.herosection{
+    margin: auto;
+    max-width: 960px;
+}
+.herosection a{
+    font-size: 11px;
+}
+.home:hover{
+    color: var(--primary-color);
+    background: var(--bottom-color);
+}
+.home{
+    color: var(--primary-color);
+}
+.herosection p{
+    font-size: 12px;
+}
+h1 span{
+    color: var(--primary-color);
+}
+.contactabt{
+    display: flex;
+    gap: 14px;
+    letter-spacing: 3px;
+}
+.a{
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    background-color:var(--primary-color);
+    color: white;
+    
+}
+p{
+    font-size: 12px;
+    font-weight: lighter;
+}
+.b{
+    margin-top: 3px;
+    border-radius: 15px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: fit-content;
+    background: white;
+    color: black;
+}
+.a:hover{
+    cursor:pointer;
+}
+section #servsect{
+    margin: auto;
+    max-width: 960px;
+}
+section .descri{
+    padding:70px 0;
+    display: flex;
+    gap: 12rem;
+    margin: auto;
+    max-width: 960px;
+}
+.description-left span{
+    color: var(--primary-color);
+}
+.read-more{
+    margin-top: 2rem;
+    font-size: 11px;
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 15px;
+    width: fit-content;
+    border:solid 2px black;
+}
+.description-right h4{
+    margin-bottom: -.5rem;
+}
+
+#servsect p{
+    color: black;
+}
+
+.services-sect{
+    background-color: #d4d6db;
+    text-align: center;
+    padding: 8px 0;
+    padding-bottom: 5rem;
+}
+
+.tile-service{
+    display: flex;
+    gap: 14px;
+}
+.servicesoff{
+    background-color: white;
+}
+.servicesoff p{
+    padding: 8px;
+    height: 10%;
+}
+.cc{
+    margin-bottom: 45px;
+}
+
+footer{
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: var(--bottom-color);
+}
+.footer-se{
+    display: flex;
+    margin: auto;
+    max-width: 960px;
+    gap: 28px;
+    color: white;
+}
+.footer-se a{
+    color: white;
+}
+.firstpa{
+    width: 40%;
+}
+.firstpa .logo{
+    margin-bottom: 1rem;
+}
+.secpa, .third, .fourth{
+    margin-top: -1.2rem;
+}
+.int-div{
+    padding: 3rem 0;
+    margin: auto;
+    max-width: 960px;
+    
+}
+.pictile img{
+    width: 10%;
+}
+.nd{
+    display: block;
+}
+
+.image{
+    display:flex;
+    float:right;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-se, section #servsect, section .descri, .nav-it, .herosection{
+        gap: 14px;
+        max-width: 500px;
+    }
+
+    
+    section .descri{
+        gap: 34px;
+    }
+    #mobile-cta{
+        position: absolute;
+        display:flex;
+        float:right;
+    }
+    #mobile-cta :hover{
+        cursor: pointer;
+    }
+    div .options li{
+        display: block;
+        width: fit-content;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        color: white;
+    }
+    
+    div .options li:hover{
+        font-weight:bolder;
+        background: none;
+        color: white;
+    }
+
+    div .options ul{
+        background-color: var(--bottom-color);
+        height: 40vh;
+        width: 20%;
+        z-index: 999;
+        position: fixed;
+        left: 70%;
+        border-radius: 5%;
+
+    }
+    .logo{
+        gap: 8px;
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    
+    section #servsect .tile-service .servicesoff{
+        border-radius: 5%;
+        padding-top: .2rem; 
+    }
+}
+

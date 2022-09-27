@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding:0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#nav-bar{
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+
+.nav-it{
+    display: flex;
+}
+
+.menus{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.herosection{
+    padding-top: 14rem;
+}
